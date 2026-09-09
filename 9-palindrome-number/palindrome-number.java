@@ -10,9 +10,9 @@ class Solution {
                 int digit = temp % 10;
                 temp = temp / 10;
                 
-                if(revnum > Integer.MAX_VALUE / 10 || revnum < Integer.MIN_VALUE){
-                    return false;
-                }
+                // if(revnum > Integer.MAX_VALUE / 10 || revnum < Integer.MIN_VALUE){
+                //     return false;
+                // }
 
                 revnum = revnum *10 + digit;
             }
