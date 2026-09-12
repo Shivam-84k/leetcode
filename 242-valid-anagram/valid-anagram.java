@@ -16,8 +16,8 @@ class Solution {
             check.put(th, check.getOrDefault(th, 0) -1);
         }
 
-        for(var pair: check.entrySet()){
-            if(pair.getValue() !=0 ){
+        for(var pair: check.keySet()){
+            if(check.get(pair) !=0 ){
                 return false;
             }
         }
