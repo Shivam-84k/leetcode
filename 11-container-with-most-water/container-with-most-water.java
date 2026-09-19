@@ -14,21 +14,15 @@ class Solution {
                 maxWater = currentWater;
             }            
 
-        //    if (leftHeight < rightHeight) {
-        //         while (left < right && height[left] <= leftHeight) {
-        //             left++;
-        //         }
-        //     } else {
-        //         while (left < right && height[right] <= rightHeight) {
-        //             right--;
-        //         }
-        //     }    
-
-        if (height[left] < height[right]) {
-                left++;
+           if (leftHeight < rightHeight) {
+                while (left < right && height[left] <= leftHeight) {
+                    left++;
+                }
             } else {
-                right--;
-            }
+                while (left < right && height[right] <= rightHeight) {
+                    right--;
+                }
+            }    
         } 
         return maxWater;
     }
