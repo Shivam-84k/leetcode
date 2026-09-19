@@ -10,9 +10,9 @@ class Solution {
     
         for(int i = 0; i<= total / cost1 ; i++){
 
-            long remaining = total - (cost1* i);
-            ways++;
-            ways = ways + remaining / cost2;
+            int remaining = total - (cost1* i);
+            
+            ways +=  (remaining / cost2) +1;
         }
 
         return ways;
